@@ -113,6 +113,11 @@ ul.dash li::before {
 /* paper titles carry the weight; coauthors and details stay light */
 .title {
   font-weight: bold;
+  text-decoration: none;
+}
+
+.title:hover {
+  text-decoration: underline;
 }
 
 .links {
