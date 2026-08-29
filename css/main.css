@@ -1,0 +1,120 @@
+/* Plain academic style — no framework, no JS */
+
+:root {
+  --text: #1a1a1a;
+  --muted: #555555;
+  --link: #1a5276;
+  --rule: #dddddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--text);
+  background: #ffffff;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: normal;
+  margin-bottom: 0.2rem;
+}
+
+h1 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin: 2.2rem 0 0.8rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: #000000;
+}
+
+.header {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.header .intro {
+  flex: 1;
+}
+
+.header img {
+  width: 150px;
+  border-radius: 3px;
+}
+
+p {
+  margin-bottom: 0.9rem;
+}
+
+/* dash lists, one item per paper */
+ul.dash {
+  list-style: none;
+}
+
+ul.dash li {
+  padding-left: 1.1rem;
+  position: relative;
+  margin-bottom: 0.85rem;
+}
+
+ul.dash li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+}
+
+.links {
+  color: var(--muted);
+}
+
+.note {
+  color: var(--muted);
+  font-style: italic;
+}
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 560px) {
+  .header {
+    flex-direction: column-reverse;
+  }
+  .header img {
+    width: 120px;
+  }
+}
