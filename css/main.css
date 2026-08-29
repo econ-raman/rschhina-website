@@ -19,7 +19,7 @@ body {
   line-height: 1.55;
   color: var(--text);
   background: #ffffff;
-  max-width: 990px;
+  max-width: 1020px;
   margin: 0 auto;
   padding: 3rem 1.25rem 4rem;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 .sidebar {
-  width: 180px;
+  width: 235px;
   flex-shrink: 0;
 }
 
