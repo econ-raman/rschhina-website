@@ -110,6 +110,11 @@ ul.dash li::before {
   color: var(--muted);
 }
 
+/* paper titles carry the weight; coauthors and details stay light */
+.title {
+  font-weight: bold;
+}
+
 .links {
   color: var(--muted);
 }
