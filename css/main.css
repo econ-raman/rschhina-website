@@ -56,6 +56,11 @@ main {
   max-width: 760px;
 }
 
+/* single-column subpages (no sidebar) */
+main.page {
+  max-width: 760px;
+}
+
 h1 {
   font-size: 1.9rem;
   font-weight: normal;
