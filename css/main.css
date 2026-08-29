@@ -32,13 +32,22 @@ body {
 }
 
 .sidebar {
-  width: 170px;
+  width: 180px;
   flex-shrink: 0;
 }
 
 .sidebar img {
   width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
   border-radius: 3px;
+}
+
+.sidebar .contact {
+  margin-top: 0.9rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--muted);
 }
 
 main {
