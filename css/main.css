@@ -156,4 +156,8 @@ footer {
     object-fit: cover;
     object-position: 50% 22%;
   }
+  /* contact block reads better centred under a full-width photo */
+  .sidebar .contact {
+    text-align: center;
+  }
 }
